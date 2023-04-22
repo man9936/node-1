@@ -9,6 +9,19 @@ app.get('/',(req,res)=>{
     res.send('Print Manish kesharwani!');
 })
 
+
+app.get('/home',(req,res)=>{
+    res.send('Print Home Page');
+})
+
+app.get('/about',(req,res)=>{
+    res.send('Print About page');
+})
+
+
+app.get('/node',(req,res)=>{
+    res.send('welcome to my node project');
+})
 app.listen(port,(req,res,next)=>{
     console.log('listening on '+ port);
 })
